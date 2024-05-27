@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/imagenes/foto1.jpeg);
+    /* Ruta de la imagen de portada */
+    background-size: cover;
+    background-position: center top;
+    /* Centra la imagen verticalmente */
+    background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 35px;
+    /* Ajusta el tamaño del logo */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente */
+    margin-right: 10px;
+    /* Espaciado entre el logo y el texto */
+    margin-left: 20px;
+}
+
+nav {
+    position: relative;
+    z-index: 2;
+    /* Ajusta el valor según sea necesario */
+    background-color: rgba(2, 6, 13, 0.7);
+    /* Color del fondo del nav */
+    display: flex;
+    /* Utiliza flexbox para alinear los elementos */
+    justify-content: space-between;
+    /* Alinea los elementos a los extremos */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+}
+
+/* Estilos generales */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(02, 06, 13, 0.0);
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+/* Estilos para el menú desplegable */
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 165, 0, 0.8);
+    /* Color naranja con transparencia */
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul li .dropdown-menu a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li:hover .dropdown-menu a:hover {
+    background-color: rgba(255, 165, 0, 1);
+    /* Color naranja sin transparencia al hacer hover */
+}

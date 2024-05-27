@@ -1,0 +1,83 @@
+/* Estilos para el contenido principal */
+main {
+    max-width: 600px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Centrar el contenido y agregar margen arriba y abajo */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 100px; /* Margen inferior igual o mayor a la altura del footer */
+}
+
+/* Estilos para los elementos del formulario */
+.form-control {
+    margin-bottom: 20px; /* Espaciado entre elementos del formulario */
+}
+
+label {
+    font-weight: bold; /* Hacer que las etiquetas sean más visibles */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Ancho completo para los campos de texto */
+    padding: 8px; /* Espaciado interno */
+    margin-top: 5px; /* Espaciado superior */
+    border: 1px solid #ccc; /* Borde del campo de texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo mano al pasar por encima */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3; /* Cambio de color al pasar por encima */
+}
+
+/* Estilos para los mensajes de error */
+.error {
+    color: red; /* Color rojo para los mensajes de error */
+    margin-top: 5px; /* Espaciado superior */
+}
+
+/* Estilos para la ventana modal emergente */
+.modal {
+    display: none; /* Ocultar la ventana modal por defecto */
+    position: fixed; /* Posición fija para que se mantenga visible */
+    z-index: 1; /* Asegurar que la ventana modal esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #fff; /* Fondo blanco para el contenido de la ventana modal */
+    margin: 25% auto; /* Margen superior e inferior y centrado horizontalmente */
+    padding: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    max-width: 80%; /* Ancho máximo del contenido */
+}
+
+.justified {
+    text-align: justify; /* Alinear texto justificado */
+}
+
+#errorModalButton {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo mano al pasar por encima */
+}
+
+#errorModalButton:hover {
+    background-color: #0056b3; /* Cambio de color al pasar por encima */
+}
