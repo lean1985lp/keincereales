@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario2.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <!-- Info -->
+            <div class="info">
+                <div class="content">
+                    <h2>Información de contacto</h2>
+                    <div class="info-text">
+                        <div class="item">
+                            <span class="fas fa-envelope"></span>
+                            <span>Keincereales@gmail.com</span>
+                        </div>
+                        <div class="item">
+                            <span class="fas fa-phone"></span>
+                            <span>Telefono: +54 9 2213147287</span>
+                        </div>
+                        <div class="item">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span>calle 68 Nº 278, La Plata.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sociales">
+                    <a href="https://www.facebook.com/keincereales/?locale=es_LA"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/keincereales/?hl=es"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                    <a href="#"><span class="fab fa-google"></span></a>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="form" id="formularioContacto">
+                <h2>Comunicate con nosotros</h2>
+                <form class="form-box" id="formRegister">
+                    <div class="input-box ancho50">
+                        <input type="text" id="nombre" name="nombre" required>
+                        <span>Nombre</span>
+                        <span class="error" id="error-nombre"></span>
+                    </div>
+                    <div class="input-box ancho50">
+                        <input type="text" id="apellido" name="apellido" required>
+                        <span>Apellido</span>
+                        <span class="error" id="error-apellido"></span>
+                    </div>
+                    <div class="input-box ancho50">
+                        <input type="email" id="email" name="email" required>
+                        <span>Email</span>
+                        <span class="error" id="error-email"></span>
+                    </div>
+                    <div class="input-box ancho50">
+                        <input type="text" id="telefono" name="telefono" required>
+                        <span>Telefono</span>
+                        <span class="error" id="error-telefono"></span>
+                    </div>
+                    <div class="input-box ancho100">
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <span>Escribe tu mensaje...</span>
+                        <span class="error" id="error-mensaje"></span>
+                    </div>
+                    <div class="input-box ancho100 btn">
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <button class="button-volver" type="button" onclick="window.location.href='../index.html'">Volver</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="scriptForm.js"></script> -> <!--Se puede "linkear al otro script  descomentado este y comentando el de abajo" -->
+    <script src="/js/validaciones.js"></script>  <!--este lo uso para guardar los ingresos amodo de db pasajera-->
+    <script>alert("Pareciera que no esta funcionando... si lo ves, es que ya funciona!!!")</script>
+</body>
+</html>
