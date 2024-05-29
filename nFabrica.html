@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sin conexión a Internet</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nFabrica.css">
 </head>
@@ -12,7 +15,7 @@
 
     <header class="cabecera">
         <div class="contenedor-logo">
-            <img class="Logo-kein" src="imagenes/Logo kein naranja.png" alt="Logo-kein" width="60">
+            <img class="Logo-kein" src="imagenes/Logo_kein_naranja.png" alt="Logo-kein" width="60">
         </div>
         <nav class="navegacion">
             <ul class="lista-navegacion">
@@ -30,7 +33,7 @@
                     <div class="desplegable-menu">
                         <a href="nFabrica.html">Nuestra Fábrica</a>
                         <a href="personalProf.html">Personal profesional</a>
-                        <a href="nosotrosGenteee.html">Desarrolladores del  WebSite</a>
+                        <a href="nosotrosGenteee.html">Desarrolladores del WebSite</a>
                     </div>
                 </li>
                 <li class="desplegable">
@@ -42,7 +45,7 @@
                     </div>
                 </li>
                 <li class="desplegable">
-    
+
                 </li>
                 <li class="desplegable-usuario">
                     <a href="#" class="alternar-usuario"><img class="icos-navbar" src="favicon/usuario-de-perfil.png"
@@ -51,7 +54,7 @@
                         <a href="/mercadopago/mercado.html">Iniciar sesión</a>
                         <a href="registro.html">Registrarse</a>
                     </div>
-    
+
                 </li>
                 <li class="desplegable-carrito">
                     <a href="#" class="alternar-carrito"><img class="icos-navbar" src="favicon/carrito-de-compras.png"
@@ -59,29 +62,50 @@
                 </li>
             </ul>
         </nav>
-    </header>   <!-- Aqui termina header y navbar con desplegables -->
+    </header> <!-- Aqui termina header y navbar con desplegables -->
 
-    <div id="main-content">
+    <div class="banner">
+        <li><img src="imagenes/foto18.jpeg"></li>
+    </div>
+
+    <div class="div-mapa">
         <h1>Nuestra Sucursal</h1>
-        <div id="suggestions-list">
-            <ul>
-                <li><img src="imagenes/foto18.jpeg"></li>
-                <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.390921788275!2d-57.9256099!3d-34.9217316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e8a82790c357%3A0x2e40d15cdf0cff75!2sC.%2068%20278%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1711225279079!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
-            </ul>
-        </div>
-        <section class="subfooter">
-            <p>Como contactarnos - Informacion Utíl.</p>
-        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.390921788275!2d-57.9256099!3d-34.9217316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e8a82790c357%3A0x2e40d15cdf0cff75!2sC.%2068%20278%2C%20B1904%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1711225279079!5m2!1ses-419!2sar"
+                width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <footer>
-            <div class="footer-div">facebook</div>
-            <a href="https://www.facebook.com/keincereales/?locale=es_LA"><img class="social-icons__item" src="favicon/facebook_orig.png" alt="Facebook"></a>
-            <div class="footer-div">instagram</div>
-            <a href="https://www.instagram.com/keincereales/?hl=es"><img class="social-icons__item" src="favicon/instagram_orig.png" alt="Instagram"></a>
-            <div class="footer-div">¿Donde Estamos?</div>
-            <a href=https://www.google.com/maps/place/C.+68+278,+B1904+La+Plata,+Provincia+de+Buenos+Aires/@-34.921732,-57.92561,16z/data=!4m6!3m5!1s0x95a2e8a82790c357:0x2e40d15cdf0cff75!8m2!3d-34.9217316!4d-57.9256099!16s%2Fg%2F11jpgkv36w?hl=es-419&entry=ttu><img class="social-icons__item" src="favicon/mapa.png" alt="google maps"></a>
-            <div class="footer-div">Whatsap</div>
-            <a href= "https://api.whatsapp.com/send?phone=5492213147287&text=Gracias+por+comunicarte+con+Kein+Cereales%2C+d%C3%A9janos+tu+mensaje+y+nos+comunicaremos+a+la+brevedad%21"> <img class="social-icons__item" src="favicon/wasap.png" alt="wasap"></a>
-        </footer>
+    </div>
+    <section class="subfooter">
+        <p>Como contactarnos - Informacion Utíl.</p>
+    </section>
+
+    <footer>
+        <div class="footer-div">facebook</div>
+        <a href="https://www.facebook.com/keincereales/?locale=es_LA"><img class="social-icons__item"
+                src="favicon/facebook_orig.png" alt="Facebook"></a>
+        <div class="footer-div">instagram</div>
+        <a href="https://www.instagram.com/keincereales/?hl=es"><img class="social-icons__item"
+                src="favicon/instagram_orig.png" alt="Instagram"></a>
+        <div class="footer-div">¿Donde Estamos?</div>
+        <a
+            href=https://www.google.com/maps/place/C.+68+278,+B1904+La+Plata,+Provincia+de+Buenos+Aires/@-34.921732,-57.92561,16z/data=!4m6!3m5!1s0x95a2e8a82790c357:0x2e40d15cdf0cff75!8m2!3d-34.9217316!4d-57.9256099!16s%2Fg%2F11jpgkv36w?hl=es-419&entry=ttu><img
+                class="social-icons__item" src="favicon/mapa.png" alt="google maps"></a>
+        <div class="footer-div">Whatsap</div>
+        <a
+            href="https://api.whatsapp.com/send?phone=5492213147287&text=Gracias+por+comunicarte+con+Kein+Cereales%2C+d%C3%A9janos+tu+mensaje+y+nos+comunicaremos+a+la+brevedad%21">
+            <img class="social-icons__item" src="favicon/wasap.png" alt="wasap"></a>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            var header = document.querySelector('.cabecera');
+            if (window.scrollY > 50) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        };
+    </script>
 </body>
+
 </html>
