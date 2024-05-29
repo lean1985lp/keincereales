@@ -313,7 +313,7 @@ main {
   padding: 0 20px;
 }
 
- .h2-products {
+.h2-products {
   margin-left: 60px;
   margin-top: 50px;
 }
@@ -331,9 +331,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
 }
-
 
 .div_container_product {
   position: relative;
@@ -346,9 +344,8 @@ main {
   height: 100%;
   max-height: 400px; /* me aseguro de que la imagen no sea mas grande que el tamaño tipo carta */
   object-fit: cover;
-  object-position: center
+  object-position: center;
 }
-
 
 .product-info {
   padding: 20px;
@@ -464,7 +461,7 @@ button:hover {
   transform: translateY(-50%);
   /* background: rgba(0, 0, 0, 0.5); Fondo semi-transparente para el texto */
   padding: 10px;
-  color: #B5B7B7;
+  color: #b5b7b7;
   max-width: 50%;
 }
 
@@ -475,7 +472,7 @@ button:hover {
   margin-bottom: 1%;
 }
 
-.seccion3_descrip button{
+.seccion3_descrip button {
   padding: 10px 20px;
   background-color: #101010;
   border: none;
@@ -500,7 +497,7 @@ button:hover {
 }
 
 .carousel-item {
-   position: relative;
+  position: relative;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(152, 141, 141, 0.1);
   border-radius: 8px;
@@ -524,11 +521,10 @@ button:hover {
   height: auto;
 }
 
-.img{
+.img {
   width: 100%;
   height: auto;
   max-height: 400px; /* me aseguro de que la imagen no sea mas grande que el tamaño tipo carta */
-
 }
 
 .carousel-item .div_container_product img {
@@ -557,12 +553,12 @@ button:hover {
 
 .carousel-item h4 {
   margin: 5px 0;
-  font-size: 1em; 
+  font-size: 1em;
 }
 
 .carousel-item p {
   color: #555;
-  font-size: 0.8em; 
+  font-size: 0.8em;
 }
 
 .carousel-item .rating {
@@ -576,7 +572,7 @@ button:hover {
   border-radius: 5px;
   color: white;
   cursor: pointer;
-  font-size: 0.8em; 
+  font-size: 0.8em;
 }
 
 .carousel-item button:hover {
@@ -602,7 +598,7 @@ footer {
   flex: 1;
   padding: 10px;
   text-align: center;
-} 
+}
 
 /* Estilos para la ventana emergente */
 .modal {
