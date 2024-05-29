@@ -580,6 +580,7 @@ button:hover {
 }
 
 .subfooter {
+  width: 100%;
   padding: 20px;
   background-color: #222;
   color: white;
@@ -587,6 +588,7 @@ button:hover {
 }
 
 footer {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
