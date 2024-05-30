@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="favicon/LA-K.ico">
     <script src="js/script.js"></script>
 </head>
+
 <body>
     <header class="cabecera">
         <div class="contenedor-logo">
-            <img class="Logo-kein" src="imagenes/Logo kein naranja.png" alt="Logo-kein" width="60">
+            <img class="Logo-kein" src="imagenes/Logo_Kein_naranja.png" alt="Logo-kein" width="60">
         </div>
         <nav class="navegacion">
             <ul class="lista-navegacion">
@@ -34,7 +39,7 @@
                     <div class="desplegable-menu">
                         <a href="nFabrica.html">Nuestra Fábrica</a>
                         <a href="personalProf.html">Personal profesional</a>
-                        <a href="nosotrosGenteee.html">Desarrolladores del  WebSite</a>
+                        <a href="nosotrosGenteee.html">Desarrolladores del WebSite</a>
                     </div>
                 </li>
                 <li class="desplegable">
@@ -64,16 +69,15 @@
                 </li>
             </ul>
         </nav>
-    </header>   <!-- Aqui termina header y navbar con desplegables -->
+    </header> <!-- Aqui termina header y navbar con desplegables -->
 
-    <main>
         <main>
             <section class="form-control">
                 <h2>Registro</h2>
-                <form id="formRegister" method="GET" novalidate>
+                <form id="formRegister" method="get" novalidate>
                     <div class="form-control">
                         <label>Nombre</label>
-                        <input type="text" required name="firstname" id="firstname" >
+                        <input type="text" required name="firstname" id="firstname">
                     </div>
                     <div class="error" id="error-firstname"></div>
                     <div class="form-control">
@@ -89,31 +93,47 @@
                     <div class="form-control">
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Borrar formulario">
-                    <!-- Ventana emergente -->
-                    <div id="errorModal" class="modal">
-                        <div class="modal-content">
-                            <p id="errorMessage" class="justified"></p>
-                            <button id="errorModalButton">Aceptar</button>
+                        <!-- Ventana emergente -->
+                        <div id="errorModal" class="modal">
+                            <div class="modal-content">
+                                <p id="errorMessage" class="justified"></p>
+                                <button id="errorModalButton">Aceptar</button>
+                            </div>
                         </div>
-                    </div>
                 </form>
         </main>
-<script src="./js/validaciones.suscripcion.js"></script>
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/contacto.css">
-<section class="subfooter">
-    <p>Como contactarnos - Informacion Utíl.</p>
-</section>
+        <section class="subfooter">
+            <p>Como contactarnos - Informacion Utíl.</p>
+        </section>
 
-<footer>
-    <div class="footer-div">facebook</div>
-    <a href="https://www.facebook.com/keincereales/?locale=es_LA"><img class="social-icons__item" src="favicon/facebook_orig.png" alt="Facebook"></a>
-    <div class="footer-div">instagram</div>
-    <a href="https://www.instagram.com/keincereales/?hl=es"><img class="social-icons__item" src="favicon/instagram_orig.png" alt="Instagram"></a>
-    <div class="footer-div">¿Donde Estamos?</div>
-    <a href=https://www.google.com/maps/place/C.+68+278,+B1904+La+Plata,+Provincia+de+Buenos+Aires/@-34.921732,-57.92561,16z/data=!4m6!3m5!1s0x95a2e8a82790c357:0x2e40d15cdf0cff75!8m2!3d-34.9217316!4d-57.9256099!16s%2Fg%2F11jpgkv36w?hl=es-419&entry=ttu><img class="social-icons__item" src="favicon/mapa.png" alt="google maps"></a>
-    <div class="footer-div">Whatsap</div>
-    <a href= "https://api.whatsapp.com/send?phone=5492213147287&text=Gracias+por+comunicarte+con+Kein+Cereales%2C+d%C3%A9janos+tu+mensaje+y+nos+comunicaremos+a+la+brevedad%21"> <img class="social-icons__item" src="favicon/wasap.png" alt="wasap"></a>
-</footer>
+        <footer>
+            <div class="footer-div">facebook</div>
+            <a href="https://www.facebook.com/keincereales/?locale=es_LA"><img class="social-icons__item"
+                    src="favicon/facebook_orig.png" alt="Facebook"></a>
+            <div class="footer-div">instagram</div>
+            <a href="https://www.instagram.com/keincereales/?hl=es"><img class="social-icons__item"
+                    src="favicon/instagram_orig.png" alt="Instagram"></a>
+            <div class="footer-div">¿Donde Estamos?</div>
+            <a
+                href=https://www.google.com/maps/place/C.+68+278,+B1904+La+Plata,+Provincia+de+Buenos+Aires/@-34.921732,-57.92561,16z/data=!4m6!3m5!1s0x95a2e8a82790c357:0x2e40d15cdf0cff75!8m2!3d-34.9217316!4d-57.9256099!16s%2Fg%2F11jpgkv36w?hl=es-419&entry=ttu><img
+                    class="social-icons__item" src="favicon/mapa.png" alt="google maps"></a>
+            <div class="footer-div">Whatsap</div>
+            <a
+                href="https://api.whatsapp.com/send?phone=5492213147287&text=Gracias+por+comunicarte+con+Kein+Cereales%2C+d%C3%A9janos+tu+mensaje+y+nos+comunicaremos+a+la+brevedad%21">
+                <img class="social-icons__item" src="favicon/wasap.png" alt="wasap"></a>
+        </footer>
+        <script src="./js/validaciones.suscripcion.js"></script>
+        <script>
+            window.onscroll = function () {
+                var header = document.querySelector('.cabecera');
+                if (window.scrollY > 50) {
+                    header.classList.add('scroll');
+                } else {
+                    header.classList.remove('scroll');
+                }
+            };
+        </script>
+
 </body>
+
 </html>

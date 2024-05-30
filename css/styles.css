@@ -585,6 +585,7 @@ button:hover {
   background-color: #222;
   color: white;
   text-align: center;
+  box-sizing: border-box;
 }
 
 footer {
@@ -594,6 +595,7 @@ footer {
   padding: 20px;
   background-color: #333;
   color: white;
+  box-sizing: border-box;
 }
 
 .footer-div {
@@ -628,3 +630,125 @@ footer {
 #errorMessage {
   text-align: justify;
 }
+
+
+
+@media (max-width: 600px) {
+  .cabecera {
+    flex-direction: column;
+    padding: 5px 10px;
+    height: 60px;
+  }
+
+  .lista-navegacion {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navegacion {
+    margin-right: 20px;
+  }
+
+  .lista-navegacion li a {
+    padding: 10px 12px;
+  }
+
+  .navegacion {
+    flex-direction: column;
+  }
+
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-div,
+  .center-div,
+  .sidebar {
+    width: 100%;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .texto-titulo {
+    margin-top: 20px; /
+  }
+
+  .social-reacciones {
+    margin-top: 20px; 
+  }
+
+  .product-item {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+
+  .carousel {
+    flex-direction: column; 
+  }
+}
+
+
+/* @media screen and (max-width: 900px) and (min-width: 601px) {
+  .cabecera {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+  }
+
+  .Logo-kein {
+    margin-bottom: 10px;
+  }
+
+  .navegacion {
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .lista-navegacion {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .lista-navegacion li a {
+    padding: 10px;
+    width: 100%;
+  }
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-div,
+  .center-div,
+  .sidebar {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .product-item {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .carousel {
+    flex-direction: row;
+  }
+
+  .carousel-item {
+    width: 45%;
+    margin: 10px;
+  }
+} */
+
+
