@@ -161,6 +161,14 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* .center-div {
+  background-image: url(imagenes/foto2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex: 1.8;
+} */
+
 .center-div {
   background-image: url(imagenes/foto2.jpeg);
   background-repeat: no-repeat;
@@ -168,6 +176,14 @@ main {
   background-size: cover;
   flex: 1.8;
 }
+
+.center-div.with-background {
+  background-image: url(imagenes/foto2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 
 .left-div {
   flex: 1.2;
