@@ -178,7 +178,7 @@ main {
 }
 
 .center-div.with-background {
-  background-image: url(imagenes/foto2.jpeg);
+  background-image: url(../imagenes/foto2.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
