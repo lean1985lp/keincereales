@@ -1,7 +1,7 @@
 /* Estilos para el contenido principal */
 main {
     max-width: 600px; /* Ancho máximo del contenido */
-    margin: 20px auto; /* Centrar el contenido y agregar margen arriba y abajo */
+    margin: 50px auto; /* Centrar el contenido y agregar margen arriba y abajo */
     padding: 20px; /* Espaciado interno */
     margin-bottom: 100px; /* Margen inferior igual o mayor a la altura del footer */
 }
@@ -10,6 +10,7 @@ main {
 .form-control {
     margin-bottom: 20px; /* Espaciado entre elementos del formulario */
 }
+
 
 label {
     font-weight: bold; /* Hacer que las etiquetas sean más visibles */
