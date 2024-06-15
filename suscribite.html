@@ -7,60 +7,54 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/suscribite.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon/LA-K.ico">
-    <script src="js/validaciones.suscripcion.js" defer></script>
+    <script src="js/validaciones.js" defer></script>
 </head>
 <body>
+    <!-- Aqui empieza header y navbar con desplegalbles -->
     <header class="cabecera">
         <div class="contenedor-logo">
-            <img class="Logo-kein" src="imagenes/Logo_Kein_naranja.png" alt="Logo-kein" width="60">
+            <img class="Logo-kein" src="imagenes/Logo_kein_naranja.png" alt="Logo-kein" width="60">
         </div>
         <nav class="navegacion">
             <ul class="lista-navegacion">
                 <li><a href="index.html" class="desplegable-alternar">Inicio</a></li>
                 <li class="desplegable">
-                    <a href="#seccion-productos" class="desplegable-alternar">Productos</a>
+                    <a href="productos.html" class="desplegable-alternar">Productos</a>
                     <div class="desplegable-menu">
-                        <a href="productos.html">Más Productos</a>
-                        <a href="masVendidos.html">Mas Vendidos</a>
-                        <a href="#otras-present">Otras Presentaciones</a>
                     </div>
                 </li>
                 <li class="desplegable">
-                    <a href="quienes.html" class="desplegable-alternar">Acerca de</a>
-                    <div class="desplegable-menu">
-                        <a href="nFabrica.html">Nuestra Fábrica</a>
-                        <a href="personalProf.html">Personal profesional</a>
-                        <a href="nosotrosGenteee.html">Desarrolladores del WebSite</a>
+                    <a href="nFabrica.html" class="desplegable-alternar">¿Donde Estamos?</a>
                     </div>
                 </li>
                 <li class="desplegable">
-                    <a href="unirse.html" class="desplegable-alternar">Unirse</a>
-                    <div class="desplegable-menu">
-                        <a href="FormEj/formulario2.html">Como Distribuidor</a>
-                        <a href="FormEj/formulario2.html">Independiente</a>
-                        <a href="FormEj/formulario2.html">Como Sucursal</a>
-                    </div>
+                    <a href="FormEj/formulario2.html" class="desplegable-alternar">Unirse</a>
                 </li>
                 <li class="desplegable">
                     <a href="suscribite.html" class="desplegable-alternar">Suscribite</a>
+
                 </li>
                 <li class="desplegable-usuario">
-                    <a href="#" class="alternar-usuario"><img class="icos-navbar" src="favicon/usuario-de-perfil.png" alt="Iniciar sesión"></a>
+                    <a href="#" class="alternar-usuario"><img class="icos-navbar" src="favicon/usuario-de-perfil.png"
+                            alt="Iniciar sesión"></a>
                     <div class="desplegable-menu">
-                        <a href="/mercadopago/mercado.html">Iniciar sesión</a>
+                        <a href="#">Iniciar sesión</a>
                         <a href="registro.html">Registrarse</a>
                     </div>
+
                 </li>
                 <li class="desplegable-carrito">
-                    <a href="#" class="alternar-carrito"><img class="icos-navbar" src="favicon/carrito-de-compras.png" alt="Carrito de compras"></a>
+                    <a href="#" class="alternar-carrito"><img class="icos-navbar" src="favicon/carrito-de-compras.png"
+                            alt="Carrito de compras"></a>
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> <!-- Aqui termina header y navbar con desplegables -->
 
     <main>
         <section class="form-control">
@@ -87,19 +81,34 @@
             </form>
         </section>
     </main>
-    <section class="subfooter">
-        <p>Como contactarnos - Informacion Utíl.</p>
-    </section>
+    <!-- Ventana emergente de error -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <p id="errorMessage" class="justified"></p>
+            <button id="errorModalButton">Aceptar</button>
+        </div>
+    </div>
 
+    <!-- Ventana emergente de éxito -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <p id="successMessage" class="justified">¡Gracias por suscribirte!</p>
+            <button id="successModalButton">Aceptar</button>
+        </div>
+    </div>
+    </main>
+    <section class="subfooter">
+        <p>Cómo contactarnos - Información Útil.</p>
+    </section>
     <footer>
         <div class="footer-div">facebook</div>
         <a href="https://www.facebook.com/keincereales/?locale=es_LA"><img class="social-icons__item" src="favicon/facebook_orig.png" alt="Facebook"></a>
         <div class="footer-div">instagram</div>
         <a href="https://www.instagram.com/keincereales/?hl=es"><img class="social-icons__item" src="favicon/instagram_orig.png" alt="Instagram"></a>
-        <div class="footer-div">¿Donde Estamos?</div>
-        <a href=https://www.google.com/maps/place/C.+68+278,+B1904+La+Plata,+Provincia+de+Buenos+Aires/@-34.921732,-57.92561,16z/data=!4m6!3m5!1s0x95a2e8a82790c357:0x2e40d15cdf0cff75!8m2!3d-34.9217316!4d-57.9256099!16s%2Fg%2F11jpgkv36w?hl=es-419&entry=ttu><img class="social-icons__item" src="favicon/mapa.png" alt="google maps"></a>
-        <div class="footer-div">Whatsap</div>
-        <a href= "https://api.whatsapp.com/send?phone=5492213147287&text=Gracias+por+comunicarte+con+Kein+Cereales%2C+d%C3%A9janos+tu+mensaje+y+nos+comunicaremos+a+la+brevedad%21"> <img class="social-icons__item" src="favicon/wasap.png" alt="wasap"></a>
+        <div class="footer-div">¿Dónde Estamos?</div>
+        <a href="https://www.google.com/maps/place/C.+68+278,+B1904+La+Plata,+Provincia+de+Buenos+Aires/@-34.921732,-57.92561,16z/data=!4m6!3m5!1s0x95a2e8a82790c357:0x2e40d15cdf0cff75!8m2!3d-34.9217316!4d-57.9256099!16s%2Fg%2F11jpgkv36w?hl=es-419&entry=ttu"><img class="social-icons__item" src="favicon/mapa.png" alt="google maps"></a>
+        <div class="footer-div">WhatsApp</div>
+        <a href="https://api.whatsapp.com/send?phone=5492213147287&text=Gracias+por+comunicarte+con+Kein+Cereales%2C+d%C3%A9janos+tu+mensaje+y+nos+comunicaremos+a+la+brevedad%21"><img class="social-icons__item" src="favicon/wasap.png" alt="wasap"></a>
     </footer>
 </body>
 </html>
