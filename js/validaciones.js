@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const successMessage = document.getElementById('successMessage');
     const successModalButton = document.getElementById('successModalButton');
 
+    // Ocultar modales al cargar la página
+    successModal.style.display = 'none';
+    errorModal.style.display = 'none';
+
     form.addEventListener('submit', function (event) {
         let isValid = true;
         let message = '';
