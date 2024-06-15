@@ -21,48 +21,85 @@ document.addEventListener("DOMContentLoaded", function() {
         return emailRegex.test(email);
     }
 
-    function validateForm() {
-        let valid = true;
+    function showErrorMessage(message) {
+        errorMessage.textContent = message;
+        errorModal.style.display = "block";
+    }
 
-        if (!validateName(firstNameInput.value)) {
-            errorFirstName.textContent = "Por favor, ingrese un nombre válido.";
-            valid = false;
+    function clearErrors() {
+        errorFirstName.textContent = "";
+        errorLastName.textContent = "";
+        errorEmail.textContent = "";
+    }
+
+    function resetForm() {
+        clearErrors();
+        form.reset();
+    }
+
+    firstNameInput.addEventListener("blur", function() {
+        if (!validateName(firstNameInput.value.trim())) {
+            showErrorMessage("Nombre incorrecto. Ingrese nuevamente su nombre.");
         } else {
             errorFirstName.textContent = "";
         }
+    });
 
-        if (!validateName(lastNameInput.value)) {
-            errorLastName.textContent = "Por favor, ingrese un apellido válido.";
-            valid = false;
+    lastNameInput.addEventListener("blur", function() {
+        if (!validateName(lastNameInput.value.trim())) {
+            showErrorMessage("Apellido incorrecto. Ingrese nuevamente su apellido.");
         } else {
             errorLastName.textContent = "";
         }
+    });
 
-        if (!validateEmail(emailInput.value)) {
-            errorEmail.textContent = "Por favor, ingrese un email válido.";
-            valid = false;
+    emailInput.addEventListener("blur", function() {
+        if (!validateEmail(emailInput.value.trim())) {
+            showErrorMessage("Email incorrecto. Ingrese nuevamente su email.");
         } else {
             errorEmail.textContent = "";
         }
-
-        return valid;
-    }
+    });
 
     form.addEventListener("submit", function(event) {
-        if (!validateForm()) {
+        clearErrors();
+
+        if (!validateName(firstNameInput.value.trim())) {
             event.preventDefault();
-            errorMessage.textContent = "Por favor, complete todos los campos correctamente antes de enviar el formulario.";
-            errorModal.style.display = "block";
+            showErrorMessage("Por favor, ingrese un nombre válido.");
+            return;
+        }
+
+        if (!validateName(lastNameInput.value.trim())) {
+            event.preventDefault();
+            showErrorMessage("Por favor, ingrese un apellido válido.");
+            return;
+        }
+
+        if (!validateEmail(emailInput.value.trim())) {
+            event.preventDefault();
+            showErrorMessage("Por favor, ingrese un email válido.");
+            return;
+        }
+
+        alert("Los datos fueron enviados correctamente."); // Puedes reemplazar esto con tu propia lógica de envío de datos.
+        resetForm();
+    });
+
+    form.addEventListener("reset", function(event) {
+        clearErrors();
+    });
+
+    form.addEventListener("click", function(event) {
+        if (event.target.type === "submit") {
+            if (!validateName(firstNameInput.value.trim()) || !validateName(lastNameInput.value.trim()) || !validateEmail(emailInput.value.trim())) {
+                event.preventDefault();
+                showErrorMessage("Por favor, ingrese la totalidad de los datos requeridos antes de enviar.");
+            }
         }
     });
 
     errorModalButton.addEventListener("click", function() {
         errorModal.style.display = "none";
-    });
-
-    form.addEventListener("reset", function(event) {
-        errorFirstName.textContent = "";
-        errorLastName.textContent = "";
-        errorEmail.textContent = "";
     });
 });
