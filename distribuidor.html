@@ -1,106 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distribuidor</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon/LA-K.ico">
-    <script src="js/script.js"></script>
+    <script defer src="js/validaciones.suscripcion.js"></script>
 </head>
+
 <body>
-   <!-- Aqui empieza header y navbar con desplegalbles -->
-   <header class="cabecera">
-    <div class="contenedor-logo">
-        <img class="Logo-kein" src="imagenes/Logo_kein_naranja.png" alt="Logo-kein" width="60">
-    </div>
-    <nav class="navegacion">
-        <ul class="lista-navegacion">
-            <li><a href="index.html" class="desplegable-alternar">Inicio</a></li>
-            <li class="desplegable">
-                <a href="productos.html" class="desplegable-alternar">Productos</a>
-                <div class="desplegable-menu">
-                </div>
-            </li>
-            <li class="desplegable">
-                <a href="nFabrica.html" class="desplegable-alternar">¿Donde Estamos?</a>
-                </div>
-            </li>
-            <li class="desplegable">
-                <a href="FormEj/formulario2.html" class="desplegable-alternar">Unirse</a>
-            </li>
-            <li class="desplegable">
-                <a href="suscribite.html" class="desplegable-alternar">Suscribite</a>
-
-            </li>
-            <li class="desplegable-usuario">
-                <a href="#" class="alternar-usuario"><img class="icos-navbar" src="favicon/usuario-de-perfil.png"
-                        alt="Iniciar sesión"></a>
-                <div class="desplegable-menu">
-                    <a href="#">Iniciar sesión</a>
-                    <a href="registro.html">Registrarse</a>
-                </div>
-
-            </li>
-            <li class="desplegable-carrito">
-                <a href="#" class="alternar-carrito"><img class="icos-navbar" src="favicon/carrito-de-compras.png"
-                        alt="Carrito de compras"></a>
-            </li>
-        </ul>
-    </nav>
-</header> <!-- Aqui termina header y navbar con desplegables -->
+    <!-- Aquí empieza header y navbar con desplegables -->
+    <header class="cabecera">
+        <div class="contenedor-logo">
+            <img class="Logo-kein" src="imagenes/Logo_kein_naranja.png" alt="Logo-kein" width="60">
+        </div>
+        <nav class="navegacion">
+            <ul class="lista-navegacion">
+                <li><a href="index.html" class="desplegable-alternar">Inicio</a></li>
+                <li class="desplegable">
+                    <a href="productos.html" class="desplegable-alternar">Productos</a>
+                    <div class="desplegable-menu">
+                    </div>
+                </li>
+                <li class="desplegable">
+                    <a href="nFabrica.html" class="desplegable-alternar">¿Dónde Estamos?</a>
+                </li>
+                <li class="desplegable">
+                    <a href="distribuidor.html" class="desplegable-alternar">Unirse</a>
+                </li>
+                <li class="desplegable">
+                    <a href="suscribite.html" class="desplegable-alternar">Suscribite</a>
+                </li>
+                <li class="desplegable-usuario">
+                    <a href="#" class="alternar-usuario"><img class="icos-navbar" src="favicon/usuario-de-perfil.png" alt="Iniciar sesión"></a>
+                    <div class="desplegable-menu">
+                        <a href="#">Iniciar sesión</a>
+                        <a href="registro.html">Registrarse</a>
+                    </div>
+                </li>
+                <li class="desplegable-carrito">
+                    <a href="#" class="alternar-carrito"><img class="icos-navbar" src="favicon/carrito-de-compras.png" alt="Carrito de compras"></a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!-- Aquí termina header y navbar con desplegables -->
 
     <main>
-        <h3><b>Si queres ser distribuidor completa el formulario y nos ponemos en contacto con vos</b></h3>
-        <section>
-            <form action="" onsubmit="return validarFormulario()">
-                <table>
-                    <tr>
-                        <td><label for="nombre">Nombre:</label></td>
-                        <td><input type="text" name="nombre" id="nombre"></td>
-                    </tr>
-                
-                    <tr>
-                        <td><label for="ape">Apellido:</label></td>
-                        <td><input type="text" name="apellido" id="ape"></td>
-                    </tr>
-                
-                    <tr>
-                        <td><label for="telefono">Telefono:</label></td>
-                        <td><input type="tel" name="telefono" id="telefono"></td>
-                    </tr>
-                
-                    <tr>
-                        <td> <label for="correo">Email:</label></td>
-                        <td> <input type="email" name="correo" id="correo"></td>
-                    </tr>
-                
-                    <tr>
-                        <td></td>
-                        <td>Consulta: <br>
-                            <textarea rows="6"></textarea></td>
-                    </tr>
-                
-                    <tr>
-                        <td colspan="2">
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar formulario">
-                        </td>
-                    </tr>
-                </table>
-
+        <section class="form-control">
+            <h2>Registro</h2>
+            <form id="formRegister" method="get" novalidate>
+                <div class="form-control">
+                    <div class="input-row">
+                        <div class="half-width">
+                            <label for="firstname">Nombre:</label>
+                            <input type="text" required name="firstname" id="firstname">
+                        </div>
+                        <div class="half-width">
+                            <label for="lastname">Apellido:</label>
+                            <input type="text" required name="lastname" id="lastname">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="half-width">
+                            <label for="email">Email:</label>
+                            <input type="email" required name="email" id="email">
+                        </div>
+                        <div class="half-width">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" required name="telefono" id="telefono">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <input type="checkbox" id="comprar" name="comprar">
+                        <label for="comprar">Quiero comprar</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="checkbox" id="vender" name="vender">
+                        <label for="vender">Quiero vender</label>
+                    </div>
+                    <div class="input-row">
+                        <input type="checkbox" id="distribuir" name="distribuir">
+                        <label for="distribuir">Quiero ser distribuidor</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar formulario">
+                    </div>
+                </div>
             </form>
+            <!-- Ventana emergente -->
+            <div id="errorModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <p id="errorMessage" class="justified"></p>
+                    <button id="errorModalButton">Aceptar</button>
+                </div>
+            </div>
         </section>
-
-
     </main>
-
     <section class="subfooter">
-        <p>Como contactarnos - Informacion Utíl.</p>
+        <p>Cómo contactarnos - Información Útil.</p>
     </section>
 
     <footer>
@@ -108,11 +114,13 @@
         <a href="https://www.facebook.com/keincereales/?locale=es_LA"><img class="social-icons__item" src="favicon/facebook_orig.png" alt="Facebook"></a>
         <div class="footer-div">instagram</div>
         <a href="https://www.instagram.com/keincereales/?hl=es"><img class="social-icons__item" src="favicon/instagram_orig.png" alt="Instagram"></a>
-        <div class="footer-div">¿Donde Estamos?</div>
-        <a href=https://www.google.com/maps/place/C.+68+278,+B1904+La+Plata,+Provincia+de+Buenos+Aires/@-34.921732,-57.92561,16z/data=!4m6!3m5!1s0x95a2e8a82790c357:0x2e40d15cdf0cff75!8m2!3d-34.9217316!4d-57.9256099!16s%2Fg%2F11jpgkv36w?hl=es-419&entry=ttu><img class="social-icons__item" src="favicon/mapa.png" alt="google maps"></a>
-        <div class="footer-div">Whatsap</div>
-        <a href= "https://api.whatsapp.com/send?phone=5492213147287&text=Gracias+por+comunicarte+con+Kein+Cereales%2C+d%C3%A9janos+tu+mensaje+y+nos+comunicaremos+a+la+brevedad%21"> <img class="social-icons__item" src="favicon/wasap.png" alt="wasap"></a>
+        <div class="footer-div">¿Dónde Estamos?</div>
+        <a href="https://www.google.com/maps/place/C.+68+278,+B1904+La+Plata,+Provincia+de+Buenos+Aires/@-34.921732,-57.92561,16z/data=!4m6!3m5!1s0x95a2e8a82790c357:0x2e40d15cdf0cff75!8m2!3d-34.9217316!4d-57.9256099!16s%2Fg%2F11jpgkv36w?hl=es-419&entry=ttu">
+            <img class="social-icons__item" src="favicon/mapa.png" alt="google maps"></a>
+        <div class="footer-div">WhatsApp</div>
+        <a href="https://api.whatsapp.com/send?phone=5492213147287&text=Gracias+por+comunicarte+con+Kein+Cereales%2C+d%C3%A9janos+tu+mensaje+y+nos+comunicaremos+a+la+brevedad%21">
+            <img class="social-icons__item" src="favicon/wasap.png" alt="WhatsApp"></a>
     </footer>
-<script src="./js/validaciones.js"></script>    
 </body>
+
 </html>

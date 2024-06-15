@@ -1,68 +1,47 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Estilo básico para el mensaje de alerta */
+#errorModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el modal */
+    z-index: 1000; /* Asegura que el modal esté sobre otros elementos */
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+.modal-content {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 18px;
+#errorModal p {
     margin-bottom: 20px;
-}
-
-.error-code {
-    margin-top: 20px;
-    color: #ff0000;
-    font-weight: bold;
-}
-
-#suggestions-list {
-    margin-top: 20px;
-}
-
-#suggestions-list p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-#suggestions-list ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-#suggestions-list ul li {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
     font-size: 16px;
-    background-color: gray;
+}
+
+#errorModalButton {
+    background-color: #f44336;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    border-radius: 4px;
 }
 
-button:hover {
-    background-color: rgb(69, 69, 69);
+#errorModalButton:hover {
+    background-color: #df372c;
 }
